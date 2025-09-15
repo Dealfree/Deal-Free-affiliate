@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "sozip",
+      "email": "fase19op@gmail.com",
+      "password": "fahad0325",
+      "easypaisa": "1234567890",
+      "code": "ADMIN01",
+      "isAdmin": true,
+      "notifications": [],
+      "ad": null
+    }
+  ],
+  "ads": [
+    {
+      "link": "https://deal.free.nf/product/premium-comfort-fit-wireless-earbuds/",
+      "desc": "Experience high-quality comfort and durability with these premium earbuds."
+    },
+    {
+      "link": "https://deal.free.nf/product/premium-mens-100ml-perfume-long-lasting-24h-fragrance/",
+      "desc": "Discover the ultimate scent experience with our Premium Men’s Perfume."
+    }
+  ]
+}
