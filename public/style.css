@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, button, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+nav {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav span {
+    float: right;
+    cursor: pointer;
+}
+.tab {
+    display: none;
+}
+.tab.active {
+    display: block;
+}
+.ads-item {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.notification {
+    background: #ffecb3;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
