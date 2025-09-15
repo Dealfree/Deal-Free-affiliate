@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    Dashboard <span onclick="logout()">Logout</span>
+</nav>
+<div class="container">
+    <!-- Notifications -->
+    <h3>Notifications:</h3>
+    <div id="notifications"></div>
+
+    <!-- User Code -->
+    <h3>Your Code:</h3>
+    <p id="userCode"></p>
+
+    <!-- Assigned Ads -->
+    <h3>Ads:</h3>
+    <div id="ads"></div>
+
+    <!-- Admin Panel -->
+    <div id="adminTab" class="tab" style="display:none;">
+        <h2>Admin Panel</h2>
+
+        <!-- Users List -->
+        <h3>All Users:</h3>
+        <div id="adminData"></div>
+
+        <!-- Send Notification -->
+        <h3>Send Notification:</h3>
+        <input type="email" id="targetEmail" placeholder="User Email">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button onclick="sendNotification()">Send</button>
+
+        <!-- Add / Remove Ads -->
+        <h3>Add / Remove Ads:</h3>
+        <input type="text" id="newAdLink" placeholder="Ad Link">
+        <textarea id="newAdDesc" placeholder="Ad Description"></textarea>
+        <button onclick="addAd()">Add Ad</button>
+        <h4>Existing Ads:</h4>
+        <div id="existingAds"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+function logout(){ 
+    localStorage.removeItem('currentUserEmail'); 
+    window.location.href="index.html"; 
+}
+window.onload = loadDashboard;
+</script>
+</body>
+</html>
